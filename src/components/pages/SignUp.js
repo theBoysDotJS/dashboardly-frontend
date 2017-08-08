@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './SignUp.css';
 import { API_HOST } from '../../config';
-
+import {browserHistory as history} from "react-router";
 
 
 
@@ -27,7 +27,7 @@ export default class SignUp extends Component {
    return (
      fetch(`${API_HOST}/auth/users`, fetchConfig)
      .then( function(res) {
-    //    this.props.router.push('/login')
+       history.push('/login')
      })
      .catch( error => console.log(error.stack))
    )

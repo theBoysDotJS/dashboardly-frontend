@@ -26,7 +26,7 @@ module.exports = {
   },
 
   isLoggedIn() {
-	console.log(localStorage, 'tha token')
+	//console.log(localStorage, 'tha token')
     return !!localStorage.token
   },
 
