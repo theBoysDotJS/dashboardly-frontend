@@ -60,7 +60,7 @@ export default class Board extends Component {
         )}
 
       </div>
-	  <AddButton type={'bookmark'} showCreateMenu={this.state.showCreateMenu} fetchData={this.fetchBoardData} id={this.props.params.id}/>
+	  {localStorage.user === this.state.boardOwner ? <AddButton type={'bookmark'} showCreateMenu={this.state.showCreateMenu} fetchData={this.fetchBoardData} id={this.props.params.id}/> : null}
 	</div>
     );
   }
