@@ -14,14 +14,14 @@ export default class BoardCard extends Component {
     let { title, description, id } = this.props
     console.log(localStorage.user, this.props.ownerId, "the stuff")
     return (
-	  <div  className="board-card">
+	  <div className="board-card">
 	      <Link to={`/boards/${id}`}>
 	        <div>
 	          <h2>{ title }</h2>
 	          <p>{ description }</p>
 	        </div>
 	      </Link>
-		  <div className='buttons '>
+		  <div className='buttons'>
 	  	  	{+localStorage.user === +this.props.ownerId ? <EditButton type={`board`} id={id} /> : null}
 	  	  	{+localStorage.user === +this.props.ownerId ? <DeleteButton fetch={this.props.fetchData} type={`board`} id={id} /> : null}
 		  </div>

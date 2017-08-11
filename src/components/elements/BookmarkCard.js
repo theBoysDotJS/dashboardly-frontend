@@ -14,7 +14,7 @@ export default class BookmarkCard extends Component {
     console.log(title, "the title")
     return (
 	<div className="bookmark-card">
-      <a className="col-lg-4" href={url}>
+      <a className="" href={url}>
         <div>
           <h2>{ title }</h2>
           <p>{ description }</p>

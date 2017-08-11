@@ -3,6 +3,7 @@
 }
 
 .bookmark--list {
+	display: flex;
 	margin: auto;
 	text-align: center;
 }

@@ -4,6 +4,8 @@ import BookmarkCard from '../elements/BookmarkCard';
 import './Board.css';
 import AddButton from '../elements/AddButton';
 
+
+
 export default class Board extends Component {
   constructor(props) {
     super(props);
@@ -42,10 +44,9 @@ export default class Board extends Component {
     let { bookmarks } = this.state
     console.log(bookmarks)
     return (
-	<div className="container container-fluid row">
-	  <h1 className="board--title" >{this.state.title}</h1>
-      <div className="board col-lg-4 bookmark--list">
 
+	   <div className="container">
+        <div className="row">
         { bookmarks.map(b =>
           <BookmarkCard
             key={b.id}
@@ -58,8 +59,7 @@ export default class Board extends Component {
             ownerId={this.state.boardOwner}
           />
         )}
-
-      </div>
+        </div>
 	  <AddButton type={'bookmark'} showCreateMenu={this.state.showCreateMenu} fetchData={this.fetchBoardData} id={this.props.params.id}/>
 	</div>
     );
