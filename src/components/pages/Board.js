@@ -42,9 +42,9 @@ export default class Board extends Component {
     let { bookmarks } = this.state
     console.log(bookmarks)
     return (
-	<div className="container">
+	<div className="container container-fluid row">
 	  <h1 className="board--title" >{this.state.title}</h1>
-      <div className="board row bookmark--list">
+      <div className="board col-lg-4 bookmark--list">
 
         { bookmarks.map(b =>
           <BookmarkCard

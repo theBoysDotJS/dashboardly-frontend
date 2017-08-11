@@ -13,8 +13,8 @@ export default class BookmarkCard extends Component {
     let { title, description, url } = this.props
     console.log(title, "the title")
     return (
-	<div>
-      <a className="bookmark-card" href={url}>
+	<div className="bookmark-card">
+      <a className="col-lg-4" href={url}>
         <div>
           <h2>{ title }</h2>
           <p>{ description }</p>

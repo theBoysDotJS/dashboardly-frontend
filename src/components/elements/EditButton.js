@@ -39,10 +39,10 @@ export default class EditButton extends Component {
 				<div>
 			  {this.props.type === 'board' ? <ModifyBoard type={this.props.type} show={this.state.isMenuOpen} closeMenu={this.closeMenu} id={this.props.id} fetch={this.props.fetch} boardId={this.props.boardId} onSubmit={e => this._handleEdit(e)} /> : null}
 			  {this.props.type === 'bookmark' ? <ModifyBookmark type={this.props.type} show={this.state.isMenuOpen} closeMenu={this.closeMenu} id={this.props.id} fetch={this.props.fetch} boardId={this.props.boardId} onSubmit={e => this._handleEdit(e)}/> : null}
-				<div className="add-button">
-					<button onClick={() => this.setState({isMenuOpen: !this.isMenuOpen})}>
+				<div>
+					<p onClick={() => this.setState({isMenuOpen: !this.isMenuOpen})}>
 						EDIT
-					</button>
+					</p>
 				</div>
 				</div>
 			)
