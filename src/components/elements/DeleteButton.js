@@ -31,10 +31,10 @@ export default class EditButton extends Component {
 	}
 	render() {
 		return (
-			<div className="add-button">
-				<button onClick={e => this._handleDelete(e)}>
+			<div>
+				<p onClick={e => this._handleDelete(e)}>
 					X
-				</button>
+				</p>
 			</div>
 		)
 	}

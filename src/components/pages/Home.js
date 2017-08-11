@@ -5,14 +5,6 @@ import AddButton from '../elements/AddButton';
 import auth from '../../auth';
 import './Home.css';
 
-
-// const display = {
-//   display: 'block'
-// };
-// const hide = {
-//   display: 'none'
-// };
-
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -36,6 +28,7 @@ export default class Home extends Component {
   _clicked = () => {
     alert("hello world")
   }
+
   render() {
     let { boards } = this.state
     console.log(boards)

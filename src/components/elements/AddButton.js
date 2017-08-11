@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CreateBoard from '../modals/CreateBoard';
 import CreateBookmark from '../modals/CreateBookmark';
+import './AddButton.css'
 
 export default class AddButton extends Component {
 	constructor(props) {
@@ -29,8 +30,8 @@ export default class AddButton extends Component {
 		}
 
 		return (
-			<div className="add-button">
-				<button onClick={this.handleClick.bind(this)}>
+			<div>
+				<button className="add-button" onClick={this.handleClick.bind(this)}>
 					<i className="fa fa-plus fa-2x"/>
 				</button>
 			</div>
